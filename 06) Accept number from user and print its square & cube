@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int n,sqre,cube;
+   clrscr();
+   
+   printf("Enter a number:");
+   scanf("%d",&n);
+   sqre=n*n;
+   cube=n*n*n;
+   
+   printf("\nSquare: %d\ncube: %d",sqre,cube);
+   getch();
+}
+    
