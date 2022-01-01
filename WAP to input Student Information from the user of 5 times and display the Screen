@@ -1,0 +1,40 @@
+/*WAP to input Student Information from the user of 5 times and display the Screen*/
+
+#include<stdio.h>
+struct student
+{
+    int RollNo;
+    char Name[50];
+    float Marks;
+    char Grade;
+};
+
+void main()
+{
+    int i;
+    struct student a[3];
+
+    printf("Enter Student RollNo, Name, Marks,Grade\n");
+
+    for(i=0; i<=2; i++)
+    {
+        printf("\n\nEnter Student RollNo\n");
+        scanf("%d",&a[i].RollNo);
+        printf("Enter Student Name\n");
+        scanf("%s",&a[i].Name);
+        printf("Enter Student Marks\n");
+        scanf("%f",&a[i].Marks);
+        printf("Enter Student Grade\n");
+        scanf("%s",&a[i].Grade);
+    }
+
+     printf("\nStudent RollNo, Name, Marks,Grade Are");
+
+     for(i=0; i<=2; i++)
+     {
+         printf("\n\nRollNo = %d\n",a[i].RollNo);
+         printf("Name = %s\n",a[i].Name);
+         printf("Marks = %f\n",a[i].Marks);
+         printf("Grade = %c\n",a[i].Grade);
+     }
+}
